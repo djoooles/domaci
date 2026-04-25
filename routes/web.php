@@ -19,6 +19,7 @@ Route::get("/home", function (){
 Route::get("/about", function (){
     return view("about");
 });
+
 Route::get("/prognoza", [WheatherController::class, "index"]);
 
 require __DIR__.'/settings.php';
