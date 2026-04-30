@@ -20,6 +20,6 @@ Route::get("/about", function (){
     return view("about");
 });
 
-Route::get("/prognoza", [WheatherController::class, "index"]);
+Route::get("/prognoza", [\App\Http\Controllers\WeatherController::class, "index"]);
 
 require __DIR__.'/settings.php';
